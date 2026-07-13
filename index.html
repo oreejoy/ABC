@@ -1,12 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Web Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oreejoy | Instrole Motion Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is a simple HTML sample page.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Oreejoy MedTech Private Limited</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#awards">Awards</a>
+        <a href="#about">About</a>
+        <a href="#action">Video</a>
+        <a href="#media">Media</a>
+        <a href="#usecases">Use Cases</a>
+        <a href="#publications">Publications</a>
+        <a href="#team">Team</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Backed by vibrant research</span>
+          <h1>Instrole delivers gait intelligence for shoes, movement, and fall safety.</h1>
+          <p>From biomechanical insight to real-time action, our platform powers better support for flat foot drop, gait anomaly detection, Parkinson’s care, and elder fall prediction.</p>
+          <div class="hero-actions">
+            <a href="#action" class="button primary">Watch Clip</a>
+            <a href="#about" class="button secondary">Download Brochure</a>
+          </div>
+          <div class="hero-meta">
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Scroll display photos">
+          <div class="photo-scroll">
+            <div class="photo-card"><img src="../Banner.png" alt="Banner"></div>
+            <div class="photo-card"><img src="../pic1.png" alt="Team photo"></div>
+            <div class="photo-card"><img src="../pic2.png" alt="Demo"></div>
+            <div class="photo-card"><img src="../pic3.png" alt="Prototype"></div>
+            <div class="photo-card"><img src="../Pic.jpg" alt="Product"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section awards" id="awards">
+      <div class="container section-grid">
+        <div>
+          <span class="section-label">Awards and Recognition</span>
+          <h2>Validated by student innovation and international excellence</h2>
+          <p>Instrole has earned awards for research-driven design, including student innovation recognition and an industry award from Singapore.</p>
+        </div>
+        <div class="award-list">
+          <article class="award-card">
+            <h3>Student Award</h3>
+            <p>Recognized for breakthrough gait analysis research and wearable system design.</p>
+          </article>
+          <article class="award-card">
+            <h3>Singapore Award</h3>
+            <p>Honored for innovation in movement science, telehealth, and elder care safety.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container section-grid about-grid">
+        <div>
+          <span class="section-label">About Instrole</span>
+          <h2>From brochure to real-world impact.</h2>
+          <p>Instrole is a wearable device that quantifies gait by sensing the pressure profile at cardinal points beneath the foot during walking. It reports gait indices such as Step Time, Stride Time, Cadence, %Stance, %Swing, and Double Limb Support Time, calibrated against state-of-the-art gait quantification tools. Instrole is cost-effective, user-friendly, can predict and detect falls, identify gait disorders, and integrates with mobile platforms for real-time monitoring and personalized recommendations.</p>
+          <div class="about-actions">
+            <a class="button primary" href="doc.pdf" download>Download Brochure</a>
+            <a class="button secondary" href="https://www.youtube.com/watch?v=S4BlwtjQ2GI" target="_blank" rel="noreferrer">Watch Demo</a>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><strong>4</strong><span>Core insights</span></div>
+          <div class="stat-card"><strong>2 sec</strong><span>Clip preview</span></div>
+          <div class="stat-card"><strong>30+</strong><span>Use cases</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section action" id="action">
+      <div class="container">
+        <span class="section-label">In action</span>
+        <h2>See Instrole working in motion</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <video controls class="video-player">
+              <source src="../instrole_intro.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="text-card">
+            <h3>Quick action insight</h3>
+            <p>From sensor capture to visual feedback, Instrole shows how gait anomalies are detected and corrected in seconds.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section usecases" id="usecases">
+      <div class="container">
+        <span class="section-label">Use cases</span>
+        <h2>Designed for real movement challenges</h2>
+        <div class="usecase-grid">
+          <article class="usecase-card">
+            <h3>Flat foot drop</h3>
+            <p>Visual support for improved foot clearance and stability.</p>
+          </article>
+          <article class="usecase-card">
+            <h3>Heatmap analysis</h3>
+            <p>Pressure and motion visualisation while wearing smart shoes.</p>
+          </article>
+          <article class="usecase-card">
+            <h3>Gait anomaly detection</h3>
+            <p>Shashi-level precision for identifying asymmetry and inefficiency.</p>
+          </article>
+          <article class="usecase-card">
+            <h3>Gait freezing response</h3>
+            <p>Monitoring and cues to support smoother movement.</p>
+          </article>
+          <article class="usecase-card">
+            <h3>Parkinson’s support</h3>
+            <p>Before and after insights for movement with and without system assistance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact" id="impact">
+      <div class="container impact-grid">
+        <article class="impact-card">
+          <span class="section-label">Fall prediction</span>
+          <h3>Elderly support in motion</h3>
+          <p>Predictive modeling and wearable integration help reduce fall risk for seniors wearing smart shoes.</p>
+        </article>
+        <article class="impact-card">
+          <span class="section-label">Fall detection</span>
+          <h3>Rapid response monitoring</h3>
+          <p>Immediate detection when a bend or misstep occurs, with rapid notification pathways for caregivers.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section publications" id="publications">
+      <div class="container">
+        <span class="section-label">Publications</span>
+        <h2>Research, news, and citation highlights</h2>
+        <div class="publication-track" aria-label="Scrolling publication citations">
+          <div class="publication-item">Journal of Biomechanics • Gait Detection Study 2024</div>
+          <div class="publication-item">Tech Health News • Instrole wearable review</div>
+          <div class="publication-item">Movement Science Review • Parkinson’s mobility paper</div>
+          <div class="publication-item">Healthcare Today • Fall prediction innovation</div>
+        </div>
+        <div class="publication-gallery" aria-label="Research image gallery">
+          <div class="gallery-preview">
+            <img src="../pic7.jpeg" alt="Journal of Biomechanics highlight" class="gallery-main" />
+            <div class="gallery-caption">Boeing BUILD 5.0 Regional Champion</div>
+            <button class="gallery-nav prev" type="button" aria-label="Previous publication image">←</button>
+            <button class="gallery-nav next" type="button" aria-label="Next publication image">→</button>
+          </div>
+          <div class="gallery-thumbnails" role="tablist">
+            <button class="gallery-thumb active" type="button" data-index="0" role="tab" aria-selected="true"><img src="../pic7.jpeg" alt="Boeing BUILD 5.0 Regional Champion" /></button>
+            <button class="gallery-thumb" type="button" data-index="1" role="tab" aria-selected="false"><img src="../pic2.jpeg" alt="Tech news thumbnail" /></button>
+            <button class="gallery-thumb" type="button" data-index="2" role="tab" aria-selected="false"><img src="../pic3.jpeg" alt="Movement science thumbnail" /></button>
+            <button class="gallery-thumb" type="button" data-index="3" role="tab" aria-selected="false"><img src="../pic4.jpeg" alt="Fall prediction thumbnail" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team" id="team">
+      <div class="container team-grid">
+        <article class="team-card">
+          <span class="section-label">Founder</span>
+          <div class="team-avatar"><img src="../d1.png" alt="Uttama Lahiri"></div>
+          <h3>Uttama Lahiri</h3>
+          <p>Founder — motion scientist and product strategist leading the Instrole platform. Focused on gait analytics, wearable integration, and clinical translation.</p>
+        </article>
+        <article class="team-card">
+          <span class="section-label">Co-founder</span>
+          <div class="team-avatar"><img src="../d2.png" alt="Manasi Kanetkar"></div>
+          <h3>Manasi Kanetkar</h3>
+          <p>Co-founder — technical lead and academic collaborator specializing in sensor validation, biomechanics, and research-driven product development.</p>
+        </article>
+        <article class="address-card">
+          <span class="section-label">Address</span>
+          <p>Room No. 302, IIT Gandhinagar Research Park, IIT Gandhinagar, Palaj, Gandhinagar, Gujarat 382355</p>
+          <p>Email: oreejoy@gmail.com</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-label">Contact</span>
+          <h2>Talk to our team</h2>
+          <p>Get in touch to learn how Instrole can support your clinic, care center, or wearable product line.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us about your use case" required></textarea>
+          </label>
+          <button type="submit" class="button primary">Send Message</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Oreejoy | Instrole Motion Intelligence</p>
+      <p>Connecting research, shoes, and real movement.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
